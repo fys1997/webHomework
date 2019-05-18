@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var number=getQueryString("number","");
     $.ajax({
-        url:"http://127.0.0.1:3000/filmDetail",
+        url:"http://111.230.55.129:3000/filmDetail",
         type:"POST",
         data:{
             id:number

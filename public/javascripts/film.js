@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
     $(".pagination").find('li').eq(1).children("a").addClass('active');
     $.ajax({
-        url:"http://127.0.0.1:3000/film",
+        url:"http://111.230.55.129:3000/film",
         type:"POST",
         dataType:"json",
         data:{
@@ -56,7 +56,7 @@ $(document).ready(function () {
                 $(".pagination").find('li').eq(1).children("a").addClass('active');
                 page=(pagecount-1)*7+1;
                 $.ajax({
-                    url:"http://127.0.0.1:3000/film",
+                    url:"http://111.230.55.129:3000/film",
                     type:"POST",
                     data:{
                         left:(page-1)*8,
@@ -100,7 +100,7 @@ $(document).ready(function () {
                 $(".pagination").find('li').eq(1).children("a").addClass('active');
                 page=(pagecount-1)*7+1;
                 $.ajax({
-                    url:"http://127.0.0.1:3000/film",
+                    url:"http://111.230.55.129:3000/film",
                     type:"POST",
                     data:{
                         left:(page-1)*8,
@@ -133,7 +133,7 @@ $(document).ready(function () {
                     page = parseInt(a.text());
                     a.addClass("active");
                     $.ajax({
-                        url:"http://127.0.0.1:3000/film",
+                        url:"http://111.230.55.129:3000/film",
                         type:"POST",
                         data:{
                             left:(page-1)*8,
